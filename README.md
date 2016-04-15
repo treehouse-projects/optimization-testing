@@ -2,11 +2,11 @@
 Use Node, npm, PhantomJS and Phantomas to measure the number of requests and size of files needed to render a web page. This simple test is one way to help optimize a web page for download speed. 
 
 1. Clone or download this repo
-2. In the folder you've downloaded, you'll find a `public` folder. In that, add an index.html file plus any other asset folders/files such as scripts, images, fonts, and CSS. This test only works on a single page, the `index.html` file and won't scan an entire set of web pages.
+2. In the folder you've downloaded, you'll find a `public` folder. In that folder, replace the `index.html` with your own `index.html` file. In addition, put any other asset folders/files such as scripts, images, fonts, and CSS reference by the index.html file. This test only works on a single page, the `index.html` file and won't scan an entire set of web pages.
 3. Using a console or terminal program naviagate to the main folder for this repo on your computer: `optimization-testing`.
 4. Type `npm install` and wait for the npm packages to install.
-5. Once the packages have installed type `npm start`. This starts a web server, so that another service `phantomas` can test your page. You can visit the `index.html` page in a browser at http://localhost:8080/
-6. Open another console or terminal session. Type `pwd` to make sure you're in the `optimization-testing` folder and then type `npm test`. After a few moments you'll see a report with a bunch of data like this:
+5. Once the packages have installed type `npm start`. This starts a web server, so that another service `phantomas` can test your page. Visit the `index.html` page in a browser at http://localhost:8080/ to make sure that your page is loading correctly.
+6. Open another console or terminal session. Navigate to the `optimization-testing` folder and then type `npm test`. After a few moments you'll see a report with a bunch of data like this:
 
 ```
 .-----------------------------------------------------------------------------------------------------------.
@@ -29,5 +29,6 @@ Use Node, npm, PhantomJS and Phantomas to measure the number of requests and siz
 ```
 Some important bits to look at: 
 
-* The `requests` row indicates the number of requests for resources required to load the page. In other words how many files -- images, css, JavaScript, etc. -- were downloaded.
-* The `bodySize [bytes]` row indicates the amount of content that was "sent on the wire" -- that is, size of files that were sent to the browser. This is a better indicator of download efficiency than `contentLength`. `contentLength` is the size of the files after begin decoded. If you've sent gzipped files, then the `bodySize` will be smaller and more accurate metric for determining the size of data sent from the server. Notice that the `bodySize` number varies -- this is a limitation of PhantomJS, but this test loads the page and it's assets 5 times, so the `average` column will give you a good indication of total amount of data transferred from the server to the browser.
+* The `requests` row indicates the number of requests for resources required to load the page. In other words how many files -- images, css, JavaScript, etc. -- the browser tried to download.
+* The `notFound` row indicates files that weren't found and would indicate missing images or files requested by the `index.html` file.
+* The `bodySize [bytes]` row indicates the amount of content that was "sent on the wire" -- that is, size of files that were sent to the browser. This is a better indicator of download efficiency than `contentLength`. `contentLength` is the size of the files after begin decoded. If you've sent gzipped files, then the `bodySize` will be smaller and more accurate metric for determining the size of data sent from the server. Notice that the `bodySize` number varies -- this is a limitation of PhantomJS, but this test loads the page and it's assets 5 times, so the `average` column will give you a good indication of total amount of data transferred from the server to the browser. In the example above, the total payload is 12963732 bytes, or 12.96MB -- that's a lot of data to download!
