@@ -1,6 +1,11 @@
 # optimization-testing
 Use Node, npm, PhantomJS and Phantomas to measure the number of requests and size of files needed to render a web page. This simple test is one way to help optimize a web page for download speed. 
 
+You'll need to install node and npm to use this tool. For instructions on installing Node and npm:
+
+* [Mac Installation Instructions](http://treehouse.github.io/installation-guides/mac/node-mac.html)
+* [Windows Installation Instructions](http://treehouse.github.io/installation-guides/windows/node-windows.html)
+
 1. Clone or download this repo
 2. In the folder you've downloaded, you'll find a `public` folder. In that folder, replace the `index.html` with your own `index.html` file. In addition, put any other asset folders/files such as scripts, images, fonts, and CSS reference by the index.html file. This test only works on a single page, the `index.html` file and won't scan an entire set of web pages.
 3. Using a console or terminal program naviagate to the main folder for this repo on your computer: `optimization-testing`.
