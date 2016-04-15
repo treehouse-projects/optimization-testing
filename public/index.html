@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+    <head>
+        <title>StockPHOTOGRAPHY</title>
+        <script src="js/jquery.js"></script>
+        <script src="js/fastclick.js"></script>
+        <script src="js/foundation.js"></script>
+        <script src="js/foundation.equalizer.js"></script>
+        <script src="js/foundation.reveal.js"></script>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/arvo.css">
+        <link rel="stylesheet" href="css/ubuntu.css">
+        <link rel="stylesheet" href="css/basics.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/hero.css">
+        <link rel="stylesheet" href="css/photo-grid.css">
+        <link rel="stylesheet" href="css/modals.css">
+        <link rel="stylesheet" href="css/footer.css">
+    </head>
+    <body>
+        <nav class="menu">
+            <h1 class="logo">Stock<b>PHOTOGRAPHY</b></h1>
+            <ul class="inline-list">
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <ul class="inline-list account">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+        </nav>
+        <section class="hero" >
+            <div class="info">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                <img src="img/avatars/avatar1.jpg" class="avatar">
+            </div>
+        </section>
+        <section class="image-grid">
+            <h2>Recent Photos</h2>
+
+            <div class="row" data-equalizer>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo1-1"><img src="img/photos/photo1.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar2.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo1-2"><img src="img/photos/photo2.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar3.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo1-3"><img src="img/photos/photo3.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar4.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-equalizer>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo2-1"><img src="img/photos/photo4.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar5.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo2-2"><img src="img/photos/photo5.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar6.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo2-3"><img src="img/photos/photo6.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar7.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-equalizer>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo3-1"><img src="img/photos/photo7.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar3.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo3-2"><img src="img/photos/photo8.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar7.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+                <div class="medium-4 columns image">
+                    <a href="#" data-reveal-id="photo3-3"><img src="img/photos/photo9.jpg" data-equalizer-watch></a>
+                    <div class="info">
+                        <img src="img/avatars/avatar4.jpg" class="avatar">
+                        <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <p class="medium-6 columns">&copy; StandardLogo Website</p>
+                <div class="medium-6 columns social">
+                    <a href="http://twitter.com"><img src="img/social/twitter.png"></a>
+                    <a href="http://instagram.com"><img src="img/social/instagram.png"></a>
+                    <a href="http://facebook.com"><img src="img/social/facebook.png"></a>
+                </div>
+            </div>
+        </footer>
+        <div id="photo1-1" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo1.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar2.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo1-2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo2.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar3.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo1-3" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo3.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar4.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo2-1" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo4.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar5.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo2-2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo5.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar6.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo2-3" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo6.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar7.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo3-1" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo7.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar3.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo3-2" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo8.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar7.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <div id="photo3-3" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h2 id="modalTitle">Photo</h2>
+            <img src="img/photos/photo9.jpg">
+            <div class="info">
+                <img src="img/avatars/avatar4.jpg" class="avatar">
+                <span class="attribution">Photo by <b>Werner Bechtelar</b></span>
+            </div>
+            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+        <script>
+          $(document).foundation();
+        </script>
+    </body>
+</html>
