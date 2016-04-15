@@ -1,5 +1,5 @@
 # optimization-testing
-Use npm to optimize a web page. 
+Use Node, npm, PhantomJS and Phantomas to measure the number of requests and size of files needed to render a web page. This simple test is one way to help optimize a web page for download speed. 
 
 1. Clone or download this repo
 2. In the folder you've downloaded, you'll find a `public` folder. In that, add an index.html file plus any other asset folders/files such as scripts, images, fonts, and CSS. This test only works on a single page, the `index.html` file and won't scan an entire set of web pages.
